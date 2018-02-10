@@ -1,0 +1,30 @@
+1. The purpose of the pivot is to choose a value on which to base the three partitions on. If the array
+was already sorted, the algorithm would have run faster if we chose the middle value as the pivot each time due to
+not having one partition being extremely larger than the rest.
+
+2. Test Cases:
+[]=Bad index
+[1]=1
+[1,1]=1
+[1,2,3]=2
+[1,2,3,4]=2.5
+[1,3,2]=2
+[4,2,1,3]=2.5
+
+3. The elapsed time performance of my quick-select based median finding program when it processes a large data set is:
+2.36 sec
+5.39 sec
+2.38 sec
+1.84 sec
+2.44 sec
+1.77 sec
+5.74 sec
+
+The elapsed time performance of my selection sort based median program when it processes the same large data set is: 
+33.33 sec
+25.90 sec
+25.55 sec
+28.69 sec
+30.89 sec
+28.25 sec
+31.37 sec
